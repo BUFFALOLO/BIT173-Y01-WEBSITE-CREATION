@@ -1,0 +1,51 @@
+﻿/* 
+   Spotted Wren Garden Center style sheet 
+   Filename: styles.css
+
+   Author:   
+   Date:     
+   HTML5 and CSS3 Illustrated Unit E, Independent Challenge 1
+ */
+
+/* reset styles */
+article, body, div, footer, header, h1, h2, p {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+/* global styles */
+p {
+   margin: 0.4em 0;
+}
+
+/* body and page container */
+.container {
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+/* header section */
+header {
+   padding: 0.5em;
+   background-color: yellow;
+   text-align: center;
+}
+
+/* main content */
+article {
+   max-width: 400px;
+   padding: 10px;
+   margin: 1em auto;
+   text-align: center;
+}
+h2 {
+   margin: 0 0 0.4em;
+}
+
+/* footer section */
+footer {
+   padding: 0.5em;
+   background-color: yellow;
+   text-align: center;
+}
