@@ -1,0 +1,147 @@
+﻿/* 
+   Spotted Wren Garden Center style sheet 
+   Filename: styles.css
+
+   Author:   
+   Date:     
+   HTML5 and CSS3 Illustrated Unit J, Independent Challenge 1
+ */
+
+/* reset styles */
+html {
+   font-size: 18px;
+}
+a, article, body, div, figcaption, figure, footer, header, h1, 
+h2, h3, img, li, nav, p, section, ul {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+ul {
+   list-style-type: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/* global styles */
+p {
+   margin: 0.4em 0;
+   font-size: 1.1em;
+}
+
+/* body and page container */
+body {
+   font-family: Lato, Arial, Helvetica, sans-serif;
+   background: #6ac238;
+}
+.container {
+   max-width: 864px;
+   margin: 0 auto;
+   position: relative;
+}
+
+/* skip navigation link */
+p.skipnavigation {
+   margin: 0;
+}
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   color: black;
+   background-color: snow;
+   top: 2%;
+   left: auto;
+   right: 2%;
+   z-index: 2;
+}
+
+/* header section */
+header {
+   background-color: white;
+   text-align: center;
+}
+h1 {
+   font-weight: 700;
+   font-size: 2em;
+}
+h1 img {
+   display: block;
+}
+
+/* site navigation */
+nav.sitenavigation {
+   padding-left: 6%;
+   background-color: rgb(241,90,36);
+}
+nav.sitenavigation li {
+   display: inline-block;
+   margin: 0.4em 0.6em;
+   font-size: 1.1em;
+}
+nav.sitenavigation a:link {
+   color: yellow;
+   text-decoration: none;
+}
+nav.sitenavigation a:visited {
+   color: #ffffff;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: yellow;
+   text-shadow: 1px -1px 0 #000000;
+}
+
+/* main content */
+article {
+   text-align: left;
+   background-color: rgb(255,255,255);
+   overflow: auto;
+}
+h2 {
+   margin: 0 2% 0.4em;
+   font-size: 1.8em;
+   font-weight: 700;
+}
+h3 {
+   margin: 1em 0 0.5em 2%;
+   font-size: 1.2em;
+   font-weight: bold;
+   color: green;
+}
+article p {
+   margin: 0 2% 0.4em;
+}
+figure {
+   width: 40%;
+   float: right;
+   text-align: center;
+}
+
+/* footer section */
+footer {
+   padding: 1% 1% 1% 5%;
+   background-color: yellow;
+   clear: both;
+}
+
+/* print styles */
+@media print {
+   .container, h1, h2, p {
+      color: black;
+      background: white;
+   }
+   nav {
+      display: none;
+   }
+}
+@page {
+   margin: 1in;
+}
